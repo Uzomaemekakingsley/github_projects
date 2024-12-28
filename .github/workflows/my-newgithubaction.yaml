@@ -6,13 +6,13 @@ jobs:
     steps:
       - name: say hello
         run: echo "Hello, Worlds"
-  echo-failed:
+  echo-Passed:
     runs-on: ubuntu-latest
     steps:
-      - name: failed code
+      - name: sucess code
         run: |
-            echo "failed code"
-            exit 1
+            echo "sucess code"
+            exit 0
   echo-goodbye:
     runs-on: ubuntu-latest
     steps:
