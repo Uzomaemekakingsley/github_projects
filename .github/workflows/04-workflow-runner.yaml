@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory:
+        working-directory: /Users/uzoma/new-code/github_projects/.github/04-github-action
     steps:
       - name: checkout code
         uses: action/checkout@v4
