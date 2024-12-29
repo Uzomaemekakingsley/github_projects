@@ -10,12 +10,12 @@ jobs:
         working-directory: /Users/uzoma/new-code/github_projects/.github/04-github-action
     steps:
       - name: checkout code
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
       - name: Printing folder
         run: ls
        
       - name: setup node
-        uses: action/setup-node@v3
+        uses: actions/setup-node@v3
         with:
           node-version: '20.x'
       - name: install Dependencies
