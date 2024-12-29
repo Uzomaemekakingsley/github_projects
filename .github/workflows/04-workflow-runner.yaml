@@ -1,0 +1,22 @@
+name: 04-Workflow Events
+on: 
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory:
+    steps:
+      - name: checkout code
+        uses: action/checkout@v4
+       
+      - name: setup node
+        uses: action/setup-node@v3
+        with:
+          node-version: '20.x'
+      - name: install Dependencies
+        run: npm ci
+      - name: run test
+        run: npm run test
