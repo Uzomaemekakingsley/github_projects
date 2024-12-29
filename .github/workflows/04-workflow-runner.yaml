@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: checkout code
         uses: action/checkout@v4
+      - name: Printing folder
+        run: ls
        
       - name: setup node
         uses: action/setup-node@v3
